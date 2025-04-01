@@ -420,64 +420,6 @@ module.exports = [
         "runs": true
     },
     {
-        "file": "plugins/onesignal-cordova-plugin/dist/index.js",
-        "id": "onesignal-cordova-plugin.OneSignalPlugin",
-        "pluginId": "onesignal-cordova-plugin",
-        "clobbers": [
-            "OneSignal"
-        ]
-    },
-    {
-        "file": "plugins/onesignal-cordova-plugin/dist/NotificationReceivedEvent.js",
-        "id": "onesignal-cordova-plugin.NotificationReceivedEvent",
-        "pluginId": "onesignal-cordova-plugin"
-    },
-    {
-        "file": "plugins/onesignal-cordova-plugin/dist/OSNotification.js",
-        "id": "onesignal-cordova-plugin.OSNotification",
-        "pluginId": "onesignal-cordova-plugin"
-    },
-    {
-        "file": "plugins/onesignal-cordova-plugin/dist/UserNamespace.js",
-        "id": "onesignal-cordova-plugin.UserNamespace",
-        "pluginId": "onesignal-cordova-plugin"
-    },
-    {
-        "file": "plugins/onesignal-cordova-plugin/dist/PushSubscriptionNamespace.js",
-        "id": "onesignal-cordova-plugin.PushSubscriptionNamespace",
-        "pluginId": "onesignal-cordova-plugin"
-    },
-    {
-        "file": "plugins/onesignal-cordova-plugin/dist/DebugNamespace.js",
-        "id": "onesignal-cordova-plugin.DebugNamespace",
-        "pluginId": "onesignal-cordova-plugin"
-    },
-    {
-        "file": "plugins/onesignal-cordova-plugin/dist/InAppMessagesNamespace.js",
-        "id": "onesignal-cordova-plugin.InAppMessagesNamespace",
-        "pluginId": "onesignal-cordova-plugin"
-    },
-    {
-        "file": "plugins/onesignal-cordova-plugin/dist/SessionNamespace.js",
-        "id": "onesignal-cordova-plugin.SessionNamespace",
-        "pluginId": "onesignal-cordova-plugin"
-    },
-    {
-        "file": "plugins/onesignal-cordova-plugin/dist/LocationNamespace.js",
-        "id": "onesignal-cordova-plugin.LocationNamespace",
-        "pluginId": "onesignal-cordova-plugin"
-    },
-    {
-        "file": "plugins/onesignal-cordova-plugin/dist/NotificationsNamespace.js",
-        "id": "onesignal-cordova-plugin.NotificationsNamespace",
-        "pluginId": "onesignal-cordova-plugin"
-    },
-    {
-        "file": "plugins/onesignal-cordova-plugin/dist/LiveActivitiesNamespace.js",
-        "id": "onesignal-cordova-plugin.LiveActivitiesNamespace",
-        "pluginId": "onesignal-cordova-plugin"
-    },
-    {
         "file": "plugins/cordova-plugin-x-toast/www/Toast.js",
         "id": "cordova-plugin-x-toast.Toast",
         "pluginId": "cordova-plugin-x-toast",
@@ -718,6 +660,64 @@ module.exports = [
         "merges": [
             "cordova.plugins.firebase.analytics"
         ]
+    },
+    {
+        "file": "plugins/onesignal-cordova-plugin/dist/index.js",
+        "id": "onesignal-cordova-plugin.OneSignalPlugin",
+        "pluginId": "onesignal-cordova-plugin",
+        "clobbers": [
+            "OneSignal"
+        ]
+    },
+    {
+        "file": "plugins/onesignal-cordova-plugin/dist/NotificationReceivedEvent.js",
+        "id": "onesignal-cordova-plugin.NotificationReceivedEvent",
+        "pluginId": "onesignal-cordova-plugin"
+    },
+    {
+        "file": "plugins/onesignal-cordova-plugin/dist/OSNotification.js",
+        "id": "onesignal-cordova-plugin.OSNotification",
+        "pluginId": "onesignal-cordova-plugin"
+    },
+    {
+        "file": "plugins/onesignal-cordova-plugin/dist/UserNamespace.js",
+        "id": "onesignal-cordova-plugin.UserNamespace",
+        "pluginId": "onesignal-cordova-plugin"
+    },
+    {
+        "file": "plugins/onesignal-cordova-plugin/dist/PushSubscriptionNamespace.js",
+        "id": "onesignal-cordova-plugin.PushSubscriptionNamespace",
+        "pluginId": "onesignal-cordova-plugin"
+    },
+    {
+        "file": "plugins/onesignal-cordova-plugin/dist/DebugNamespace.js",
+        "id": "onesignal-cordova-plugin.DebugNamespace",
+        "pluginId": "onesignal-cordova-plugin"
+    },
+    {
+        "file": "plugins/onesignal-cordova-plugin/dist/InAppMessagesNamespace.js",
+        "id": "onesignal-cordova-plugin.InAppMessagesNamespace",
+        "pluginId": "onesignal-cordova-plugin"
+    },
+    {
+        "file": "plugins/onesignal-cordova-plugin/dist/SessionNamespace.js",
+        "id": "onesignal-cordova-plugin.SessionNamespace",
+        "pluginId": "onesignal-cordova-plugin"
+    },
+    {
+        "file": "plugins/onesignal-cordova-plugin/dist/LocationNamespace.js",
+        "id": "onesignal-cordova-plugin.LocationNamespace",
+        "pluginId": "onesignal-cordova-plugin"
+    },
+    {
+        "file": "plugins/onesignal-cordova-plugin/dist/NotificationsNamespace.js",
+        "id": "onesignal-cordova-plugin.NotificationsNamespace",
+        "pluginId": "onesignal-cordova-plugin"
+    },
+    {
+        "file": "plugins/onesignal-cordova-plugin/dist/LiveActivitiesNamespace.js",
+        "id": "onesignal-cordova-plugin.LiveActivitiesNamespace",
+        "pluginId": "onesignal-cordova-plugin"
     }
 ];
 module.exports.metadata = 
@@ -754,8 +754,8 @@ module.exports.metadata =
     "cordova-plugin-x-toast": "2.7.3",
     "cordova.plugins.diagnostic": "5.0.2",
     "ionic-plugin-keyboard": "2.2.1",
-    "onesignal-cordova-plugin": "5.2.11",
-    "cordova-plugin-firebase-analytics": "8.0.0"
+    "cordova-plugin-firebase-analytics": "8.0.0",
+    "onesignal-cordova-plugin": "5.2.11"
 }
 // BOTTOM OF METADATA
 });
