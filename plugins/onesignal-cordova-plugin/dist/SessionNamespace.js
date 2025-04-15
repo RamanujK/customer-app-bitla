@@ -1,5 +1,4 @@
-cordova.define("onesignal-cordova-plugin.SessionNamespace", function(require, exports, module) {
-"use strict";
+cordova.define("onesignal-cordova-plugin.SessionNamespace", function(require, exports, module) { "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var Session = /** @class */ (function () {
     function Session() {

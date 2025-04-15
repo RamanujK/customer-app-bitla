@@ -1,5 +1,4 @@
-cordova.define("onesignal-cordova-plugin.OSNotification", function(require, exports, module) {
-"use strict";
+cordova.define("onesignal-cordova-plugin.OSNotification", function(require, exports, module) { "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.OSNotification = void 0;
 var OSNotification = /** @class */ (function () {

@@ -20,20 +20,27 @@
 */
 
 module.exports = {
-    id: 'ios',
-    bootstrap: function () {
-        // Attach the console polyfill that is iOS-only to window.console
-        // see the file under plugin/ios/console.js
-        require('cordova/modulemapper').clobbers('cordova/plugin/ios/console', 'window.console');
+    id: 'browser',
+    cordovaVersion: '4.2.0', // cordova-js
 
-        // Attach the wkwebkit utility to window.WkWebView
-        // see the file under plugin/ios/wkwebkit.js
-        require('cordova/modulemapper').clobbers('cordova/plugin/ios/wkwebkit', 'window.WkWebView');
+    bootstrap: function() {
 
-        // Attach the splashscreen utility to window.navigator.splashscreen
-        // see the file under plugin/ios/launchscreen.js
-        require('cordova/modulemapper').clobbers('cordova/plugin/ios/launchscreen', 'navigator.splashscreen');
+        var modulemapper = require('cordova/modulemapper');
+        var channel = require('cordova/channel');
 
-        require('cordova/channel').onNativeReady.fire();
+        modulemapper.clobbers('cordova/exec/proxy', 'cordova.commandProxy');
+
+        channel.onNativeReady.fire();
+
+        document.addEventListener("visibilitychange", function(){
+            if(document.hidden) {
+                channel.onPause.fire();
+            }
+            else {
+                channel.onResume.fire();
+            }
+        });
+
+    // End of bootstrap
     }
 };

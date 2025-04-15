@@ -1,5 +1,4 @@
-cordova.define("onesignal-cordova-plugin.NotificationReceivedEvent", function(require, exports, module) {
-"use strict";
+cordova.define("onesignal-cordova-plugin.NotificationReceivedEvent", function(require, exports, module) { "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.NotificationWillDisplayEvent = void 0;
 var OSNotification_1 = require("./OSNotification");

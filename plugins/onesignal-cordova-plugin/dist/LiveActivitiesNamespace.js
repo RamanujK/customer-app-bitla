@@ -1,5 +1,4 @@
-cordova.define("onesignal-cordova-plugin.LiveActivitiesNamespace", function(require, exports, module) {
-"use strict";
+cordova.define("onesignal-cordova-plugin.LiveActivitiesNamespace", function(require, exports, module) { "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var LiveActivities = /** @class */ (function () {
     function LiveActivities() {
