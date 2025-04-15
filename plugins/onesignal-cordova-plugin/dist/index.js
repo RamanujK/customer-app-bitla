@@ -1,4 +1,5 @@
-cordova.define("onesignal-cordova-plugin.OneSignalPlugin", function(require, exports, module) { "use strict";
+cordova.define("onesignal-cordova-plugin.OneSignalPlugin", function(require, exports, module) {
+"use strict";
 /**
  * Modified MIT License
  *

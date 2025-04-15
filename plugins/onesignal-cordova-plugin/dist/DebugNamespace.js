@@ -1,4 +1,5 @@
-cordova.define("onesignal-cordova-plugin.DebugNamespace", function(require, exports, module) { "use strict";
+cordova.define("onesignal-cordova-plugin.DebugNamespace", function(require, exports, module) {
+"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.LogLevel = void 0;
 // An enum that declares different types of log levels you can use with the OneSignal SDK, going from the least verbose (none) to verbose (print all comments).

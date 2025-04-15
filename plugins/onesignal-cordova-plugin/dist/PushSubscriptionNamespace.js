@@ -1,4 +1,5 @@
-cordova.define("onesignal-cordova-plugin.PushSubscriptionNamespace", function(require, exports, module) { "use strict";
+cordova.define("onesignal-cordova-plugin.PushSubscriptionNamespace", function(require, exports, module) {
+"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var PushSubscription = /** @class */ (function () {
     function PushSubscription() {

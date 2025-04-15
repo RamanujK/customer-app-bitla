@@ -1,4 +1,5 @@
-cordova.define("cordova-plugin-apprate.storage", function(require, exports, module) { module.exports = {
+cordova.define("cordova-plugin-apprate.storage", function(require, exports, module) {
+module.exports = {
   get: function(key) {
     return new Promise(function(resolve, reject) {
       NativeStorage.getItem(key, resolve, function(e) {

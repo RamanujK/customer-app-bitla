@@ -1,4 +1,5 @@
-cordova.define("onesignal-cordova-plugin.LocationNamespace", function(require, exports, module) { "use strict";
+cordova.define("onesignal-cordova-plugin.LocationNamespace", function(require, exports, module) {
+"use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var Location = /** @class */ (function () {
     function Location() {
